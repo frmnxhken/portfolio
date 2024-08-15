@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  overflow-x: hidden;
+}
+
+.slider {
+  display: flex;
+  position: absolute;
+  height: 25%;
+  width: 100%;
+  font-size: 100px;
+  white-space: nowrap;
+  column-gap: 40px;
+}
+
+.slider-image {
+  display: flex;
+  position: absolute;
+  width: 100%;
+  white-space: nowrap;
+  column-gap: 10px;
+}
+
+.slider-image img {
+  animation: image-scroll 3s linear infinite;
+}
+
+.slider>h1 {
+  font-size: 150px;
+  animation: scroll 7s linear infinite;
+}
+
+@media (max-width: 680px) {
+  .slider>h1 {
+    font-size: 80px;
+    animation: scroll 7s linear infinite;
+  }
+}
+
+@keyframes scroll {
+  to {
+    transform: translateX(calc(-100% - 40px));
+  }
+}
+
+@keyframes image-scroll {
+  to {
+    transform: translateX(calc(-100% - 10px));
+  }
+}
+
+@layer base {
+  @keyframes fill-text {
+    to {
+      background-position-x: 0em, 0;
+    }
+  }
+}
+
+@layer components {
+  .reveal-text {
+    background-image: linear-gradient(to right,
+        #000,
+        #000), linear-gradient(to right,
+        #afafaf,
+        #afafaf);
+    background-clip: text;
+    background-position-x: -180em, 0;
+    background-repeat: no-repeat;
+    color: transparent;
+    display: inline;
+    animation: fill-text linear both;
+    animation-range: entry 80% cover 80%;
+    view-timeline: --reveal-container;
+    animation-timeline: --reveal-container;
+  }
+
+  .reveal-text-colorfull {
+    background-image: linear-gradient(to right,
+        #000000,
+        #252b3a), linear-gradient(to right,
+        #afafaf,
+        #afafaf);
+    background-clip: text;
+    background-position-x: -180em, 0;
+    background-repeat: no-repeat;
+    color: transparent;
+    display: inline;
+    animation: fill-text linear both;
+    animation-range: entry 30% cover 80%;
+    view-timeline: --reveal-container;
+    animation-timeline: --reveal-container;
+  }
+}
