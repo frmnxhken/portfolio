@@ -11,7 +11,7 @@ const Footer = () => {
                     <h1 className='text-5xl sm:text-7xl font-semibold text-white'>Lets Talk</h1>
                     {/* <img className='w-[50px] sm:w-[70px]' src={Arrow} alt='icon'/> */}
                 </div>
-                <div className='flex gap-x-24 text-gray-300 uppercase'>
+                <div className='flex gap-x-24 text-gray-300'>
                     <div className='text-sm sm:text-md'>
                         <p>Wahyudi Firmansyah</p>
                         <p>Pamekasan, Jawa Timur<br />Indonesia.</p>

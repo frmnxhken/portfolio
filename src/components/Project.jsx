@@ -14,13 +14,15 @@ const Project = () => {
         offset: ["start end", "end start"],
     });
 
-    const scale = useTransform(scrollYProgress, [0, 0.5], [1, 0.4]);
+    const widthScreen = window.innerWidth;
+
+    const scale = useTransform(scrollYProgress, [0, 0.5], [1, widthScreen > 680 ? 0.4 : 0.8]);
 
     return (
         <section ref={ref} className='py-64 h-[700vh] relative'>
             <motion.div
                 style={{ scale }}
-                className='w-full sticky top-[-10%] h-screen'>
+                className='w-full sticky top-[20%] sm:top-[-10%] h-screen'>
                 <img className='w-full aspect-square object-cover' src={PROJECT_IMAGE} alt="banner" />
             </motion.div>
             <div className='absolute z-[999] top-[40%] left-[5%] sm:left-[15%]'>

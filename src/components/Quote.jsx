@@ -26,8 +26,8 @@ const Quote = () => {
         style={{ translateY: yInverseTransform }}
         className="max-w-[1200px] mx-auto px-4 pt-24 min-h-screen flex flex-col justify-center sticky top-0"
       >
-        <div className="w-[90%] mx-auto sm:w-[80%] text-center">
-          <h1 className="text-5xl sm:text-7xl uppercase font-bold supports-[animation-timeline]:reveal-text-colorfull">
+        <div className="w-[90%] mx-auto sm:w-[80%] text-left sm:text-center">
+          <h1 className="text-4xl sm:text-7xl uppercase font-bold supports-[animation-timeline]:reveal-text-colorfull">
             jangan menganggap remeh siapapun, karena siapapun bisa menjadi apapun.
           </h1>
         </div>
