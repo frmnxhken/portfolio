@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import React, { useRef } from 'react';
 import {
   motion,
   useSpring,
@@ -7,8 +7,8 @@ import {
   useVelocity,
   useAnimationFrame,
   useScroll,
-} from "framer-motion";
-import { wrap } from "@motionone/utils";
+} from 'framer-motion';
+import { wrap } from '@motionone/utils';
 
 function ParallaxText({ children, baseVelocity = 100 }) {
   const baseX = useMotionValue(0);
@@ -40,8 +40,8 @@ function ParallaxText({ children, baseVelocity = 100 }) {
   });
 
   return (
-    <div className="parallax">
-      <motion.div className="scroller" style={{ x }}>
+    <div className='parallax'>
+      <motion.div className='scroller' style={{ x }}>
         <span>{children}</span>
         <span>{children}</span>
         <span>{children}</span>

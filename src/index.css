@@ -106,3 +106,12 @@ body {
     animation-timeline: --reveal-container;
   }
 }
+
+.frame-path {
+  width: 100%;
+  overflow: visible;
+  stroke: white;
+  stroke-width: 2;
+  stroke-linejoin: round;
+  stroke-linecap: round;
+}
