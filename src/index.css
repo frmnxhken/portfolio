@@ -19,7 +19,7 @@ body {
 
 .slider {
   display: flex;
-  position: absolute;
+  position: sticky;
   height: 25%;
   width: 100%;
   font-size: 100px;

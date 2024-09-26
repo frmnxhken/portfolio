@@ -6,7 +6,7 @@ const Hero = () => {
     <>
       <div className='relative w-full h-screen bg-white'>
         <p className='block sm:hidden text-md text-center pt-4'>0x / 101 / 154 / 141 / 155 / 155 / 141 / 153</p>
-        <div className='slider top-[30%]'>
+        <div className='slider top-[41%]'>
           <h1>IM WEB <span className='bg-black text-white px-6'>DEVELOPER</span></h1>
           <h1>IM WEB <span className='bg-black text-white px-6'>DEVELOPER</span></h1>
           <h1>IM WEB <span className='bg-black text-white px-6'>DEVELOPER</span></h1>

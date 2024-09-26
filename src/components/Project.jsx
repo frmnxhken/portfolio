@@ -41,22 +41,22 @@ const Project = () => {
                 className='w-full sticky top-[20%] sm:top-[-10%] h-screen'>
                 <img className='w-full aspect-4/3 object-cover' src={currentImage} alt="banner" />
             </motion.div>
-            <div className='absolute z-[999] top-[40%] rotate-3 left-[5%] sm:left-[15%]'>
+            <div className='absolute z-[99] top-[40%] rotate-3 left-[5%] sm:left-[15%]'>
                 <img className='w-[180px] sm:w-[280px]' src={ST_ME} alt='sticker'/>
             </div>
-            <div className='absolute z-[999] top-[50%] right-0 sm:right-[20%]'>
+            <div className='absolute z-[99] top-[50%] right-0 sm:right-[20%]'>
                 <img className='w-[180px] grayscale hover:grayscale-0 sm:w-[200px]' src={ST_NODE} alt='sticker'/>
             </div>
-            <div className='absolute z-[999] top-[60%] left-0 sm:left-[10%]'>
+            <div className='absolute z-[99] top-[60%] left-0 sm:left-[10%]'>
                 <img className='w-[180px] grayscale hover:grayscale-0 sm:w-[280px]' src={ST_TAILWIND} alt='sticker'/>
             </div>
-            <div className='absolute z-[999] top-[70%] right-0 sm:right-[10%]'>
+            <div className='absolute z-[99] top-[70%] right-0 sm:right-[10%]'>
                 <img className='w-[180px] grayscale hover:grayscale-0 sm:w-[280px]' src={ST_LARAVEL} alt='sticker'/>
             </div>
-            <div className='absolute z-[999] rotate-[35deg] top-[80%] left-0 sm:left-[15%]'>
+            <div className='absolute z-[99] rotate-[35deg] top-[80%] left-0 sm:left-[15%]'>
                 <img className='w-[180px] grayscale hover:grayscale-0 sm:w-[280px]' src={ST_PYTHON} alt='sticker'/>
             </div>
-            <div className='absolute z-[999] top-[85%] right-[10%] sm:right-[20%]'>
+            <div className='absolute z-[99] top-[85%] right-[10%] sm:right-[20%]'>
                 <img className='w-[180px] sm:w-[250px] -rotate-6' src={ST_ME2} alt='sticker'/>
             </div>
         </section>
