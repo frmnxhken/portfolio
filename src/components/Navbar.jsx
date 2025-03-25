@@ -17,7 +17,7 @@ const Navbar = () => {
     },
     {
       name: 'GITHUB',
-      link: 'github.com/frmnxhken'
+      link: 'https://github.com/frmnxhken'
     },
     {
       name: 'EMAIL',

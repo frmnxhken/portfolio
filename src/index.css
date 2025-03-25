@@ -27,21 +27,29 @@ body {
   column-gap: 40px;
 }
 
-.slider-image {
-  display: flex;
-  position: absolute;
-  width: 100%;
-  white-space: nowrap;
-  column-gap: 10px;
-}
-
-.slider-image img {
-  animation: image-scroll 3s linear infinite;
-}
-
 .slider>h1 {
   font-size: 150px;
   animation: scroll 7s linear infinite;
+}
+
+#tie {
+  transform-origin: center;
+  animation: tieAnimation 3s infinite;
+}
+
+@keyframes tieAnimation {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(2deg);
+  }
+  50% {
+    transform: rotate(-1deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
 }
 
 @media (max-width: 680px) {
@@ -84,7 +92,7 @@ body {
     color: transparent;
     display: inline;
     animation: fill-text linear both;
-    animation-range: entry 80% cover 80%;
+    animation-range: entry 80% cover 100%;
     view-timeline: --reveal-container;
     animation-timeline: --reveal-container;
   }

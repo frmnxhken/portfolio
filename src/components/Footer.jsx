@@ -7,7 +7,7 @@ const Footer = () => {
         <footer className='bg-black z-[999] sticky'>
             <Container style='flex flex-col justify-between h-[90vh] py-32'>
                 <div className='flex gap-2 items-end'>
-                    <h1 className='text-5xl sm:text-7xl font-semibold text-white pt-12'>Lets Talk</h1>
+                    <h1 className='text-5xl sm:text-7xl font-semibold text-white pt-12 sm:pt-24'>Lets Talk</h1>
                 </div>
                 <div className='flex gap-x-24 text-gray-300'>
                     <div className='text-sm sm:text-md'>

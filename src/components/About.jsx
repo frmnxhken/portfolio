@@ -1,5 +1,6 @@
 import React from 'react'
 import Container from './Container';
+import TextLine from './TextLine';
 
 const About = () => {
     return (
@@ -16,6 +17,7 @@ const About = () => {
                     </div>
                 </div>
             </Container>
+            <TextLine text="HAJIMEMASHITE MINNA!" rotate="right"/>
         </div>
     )
 }
