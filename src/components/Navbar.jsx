@@ -93,7 +93,7 @@ const Navbar = () => {
         variants={navVariants}
       >
         {navigations.map((navigation, index) => (
-          <div className='px-6 sm:px-12 relative flex w-full py-2 hover:bg-black hover:text-white hover:cursor-pointer'>
+          <div key={index} className='px-6 sm:px-12 relative flex w-full py-2 hover:bg-black hover:text-white hover:cursor-pointer'>
             <div className='overflow-y-hidden py-2'>
               <motion.h2
                 variants={navOptionsTextVariants}

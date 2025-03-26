@@ -123,6 +123,7 @@ body {
     animation-range: entry 80% cover 100%;
     view-timeline: --reveal-container;
     animation-timeline: --reveal-container;
+    line-height:1;
   }
 
   .reveal-text-colorfull {
