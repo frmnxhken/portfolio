@@ -3,7 +3,7 @@ import React from 'react'
 const Character = () => {
   return (
     <>
-      <div className='w-full sticky bottom-0 h-[70vh] *:sm:h-[80vh]'>
+      <div className='w-full sticky bottom-0 h-[70vh] sm:h-[80vh]'>
         <div className='flex flex-col h-full justify-end items-center'>
           <svg className='w-full sm:w-[35%]' width="421" height="718" viewBox="0 0 421 718" fill="none" xmlns="http://www.w3.org/2000/svg">
             <g id="Group 265">
