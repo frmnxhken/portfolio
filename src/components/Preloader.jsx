@@ -20,7 +20,7 @@ const Preloader = () => {
           className='w-full min-h-[100vh] z-[9999] top-0 left-0 bottom-0 fixed bg-black'
         >
           <div className='flex justify-center items-center h-full'>
-            <div className='sm:w-[40%] w-[30%]'>
+            <div className='sm:w-[15%] w-[30%]'>
               <Icon />
             </div>
           </div>

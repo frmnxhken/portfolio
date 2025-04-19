@@ -1,6 +1,7 @@
 import React from 'react'
 import Container from './Container';
 import TextLine from './TextLine';
+import { motion } from 'framer-motion';
 
 const Activity = () => {
     return (
@@ -12,7 +13,17 @@ const Activity = () => {
                             <h1 className='uppercase font-medium text-lg sm:text-xl supports-[animation-timeline]:reveal-text'>mempunyai hobby seperti menggambar, dan juga mendesain ilustrasi isometric. tertarik dan memperdalami bidang web & mobile app development.</h1>
                         </div>
                         <div className='w-full sm:w-[35%]'>
-                            <h1 className='text-5xl sm:text-6xl font-semibold text-right uppercase'>life doesn't have to be perfect</h1>
+                            <motion.h1 
+                                initial={{
+                                    x: '100%',
+                                    opacity: 0,
+                                }}
+                                whileInView={{
+                                    x: 0,
+                                    opacity: 1,
+                                    transition: { duration: 0.4, ease: "easeInOut" }
+                                }}
+                                className='text-5xl sm:text-6xl font-semibold text-right uppercase'>life doesn't have to be perfect</motion.h1>
                         </div>
                     </div>
                 </div>

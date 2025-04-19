@@ -4,12 +4,12 @@ import Text from "../assets/text.svg"
 
 const Footer = () => {
     return (
-        <footer className='bg-black z-[999] sticky'>
+        <footer className='bg-black z-[9999] sticky'>
             <Container style='flex flex-col justify-between h-[90vh] py-32'>
                 <div className='flex gap-2 items-end'>
                     <h1 className='text-5xl sm:text-7xl font-semibold text-white pt-12 sm:pt-24'>Lets Talk</h1>
                 </div>
-                <div className='flex gap-x-24 text-gray-300'>
+                <div className='flex gap-x-12 sm:gap-x-24 text-gray-300'>
                     <div className='text-sm sm:text-md'>
                         <p>Wahyudi Firmansyah</p>
                         <p>Pamekasan, Jawa Timur<br />Indonesia.</p>
@@ -17,8 +17,8 @@ const Footer = () => {
                     <div className='text-sm sm:text-md flex flex-col gap-y-2'>
                         <a href='https://instagram.com/firmansyah_ken'>Instagram</a>
                         <a href=''>Linkedin</a>
-                        <a href='github.com/frmnxhken'>Github</a>
-                        <a href=''>E-mail</a>
+                        <a href='https://github.com/frmnxhken'>Github</a>
+                        <a href='mailto:firmansyahken4@gmail.com'>E-mail</a>
                     </div>
                 </div>
             </Container>

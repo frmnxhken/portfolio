@@ -3,6 +3,7 @@ import React, { useRef, useEffect, useState } from 'react'
 import PROJECT1 from '../assets/projects/project1.webp'
 import PROJECT2 from '../assets/projects/project2.webp'
 import PROJECT3 from '../assets/projects/project3.webp'
+import PROJECT4 from '../assets/projects/project4.webp'
 import ST_ME from '../assets/stickers/stme.webp'
 import ST_ME2 from '../assets/stickers/stme2.webp'
 import ST_NODE from '../assets/stickers/nodejs.webp'
@@ -11,7 +12,7 @@ import ST_LARAVEL from '../assets/stickers/laravel.webp'
 import ST_PYTHON from '../assets/stickers/python.webp'
 
 const Project = () => {
-    const IMAGES = [PROJECT1, PROJECT2, PROJECT3, PROJECT1, PROJECT2, PROJECT3, PROJECT1, PROJECT2, PROJECT3];
+    const IMAGES = [PROJECT1, PROJECT2, PROJECT3, PROJECT4, PROJECT1, PROJECT2, PROJECT3, PROJECT4, PROJECT1, PROJECT2, PROJECT3, PROJECT4];
     const ref = useRef(null);
 
     const { scrollYProgress } = useScroll({
@@ -56,7 +57,7 @@ const Project = () => {
             <div className='absolute z-[99] rotate-[35deg] top-[80%] left-0 sm:left-[15%]'>
                 <img className='w-[180px] grayscale hover:grayscale-0 sm:w-[280px]' src={ST_PYTHON} alt='sticker'/>
             </div>
-            <div className='absolute z-[99] top-[85%] right-[10%] sm:right-[20%]'>
+            <div className='absolute z-[99] top-[90%] right-[10%] sm:right-[20%]'>
                 <img className='w-[180px] sm:w-[250px] -rotate-6' src={ST_ME2} alt='sticker'/>
             </div>
         </section>

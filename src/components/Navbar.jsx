@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import { easeIn, easeOut, motion } from "framer-motion"
 import Container from './Container'
 import LOGO from '../assets/logo.png'
+import ProgressBar from './ProgressBar'
 
 const Navbar = () => {
   const [navActive, setNavActive] = useState(false);
@@ -21,7 +22,7 @@ const Navbar = () => {
     },
     {
       name: 'EMAIL',
-      link: ''
+      link: 'mailto:firmansyahken4@gmail.com'
     }
   ];
 
@@ -71,10 +72,11 @@ const Navbar = () => {
   };
   return (
     <>
+      <ProgressBar/>
       <div className='sticky top-0 py-6 bg-white z-[999]'>
         <Container style='flex justify-between items-center'>
           <img src={LOGO} className='w-[35px]' alt='logo' />
-          <p className='hidden sm:block text-md'>0x / 101 / 154 / 141 / 155 / 155 / 141 / 153</p>
+          <p className='hidden sm:block text-sm'>0x / 101 / 154 / 141 / 155 / 155 / 141 / 153</p>
           <div
             className='hover:cursor-pointer'
             onClick={() => setNavActive((currState) => !currState)}
@@ -96,6 +98,7 @@ const Navbar = () => {
           <div key={index} className='px-6 sm:px-12 relative flex w-full py-2 hover:bg-black hover:text-white hover:cursor-pointer'>
             <div className='overflow-y-hidden py-2'>
               <motion.h2
+                onClick={() => window.location.href = navigation.link}
                 variants={navOptionsTextVariants}
                 initial='hidden'
                 animate={navActive ? 'show' : 'hidden'}
